@@ -19,40 +19,45 @@ aside,
   padding: 20px;
 }
 
-header > :first-child,
-footer > :first-child,
-article > :first-child,
-nav > :first-child,
-.reklama1 > :first-child,
-.reklama2 > :first-child {
+header> :first-child,
+footer> :first-child,
+article> :first-child,
+nav> :first-child,
+.reklama1> :first-child,
+.reklama2> :first-child {
   margin-top: 0;
 }
 
-header > :last-child,
-footer > :last-child,
-article > :last-child,
-nav > :last-child,
-aside > :last-child,
-.reklama1 > :last-child,
-.reklama2 > :last-child {
+header> :last-child,
+footer> :last-child,
+article> :last-child,
+nav> :last-child,
+aside> :last-child,
+.reklama1> :last-child,
+.reklama2> :last-child {
   margin-bottom: 0;
 }
 
 .hlavicka {
   background-color: #2ecc71;
 }
+
 .menu {
   background-color: #e74c3c;
 }
+
 .obsah {
   background-color: #f1c40f;
 }
+
 .reklama1 {
   background-color: #8e44ad;
 }
+
 .reklama2 {
   background-color: mediumturquoise;
 }
+
 .paticka {
   background-color: dodgerblue;
 }
@@ -65,3 +70,112 @@ aside > :last-child,
 	- 640px
 	- 1000px
 */
+
+.kontejner {
+  display: flex;
+  flex-direction: column;
+}
+
+.obsah {
+  display: flex;
+  flex-direction: column;
+}
+
+.reklama {
+  display: flex;
+  flex-direction: column;
+}
+
+.reklama1 {
+  margin-bottom: 20px;
+}
+
+main {
+  width: 100%;
+}
+
+div {
+  width: 100%;
+}
+
+aside {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .obsah {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 640px) {
+  aside {
+    width: 40%;
+  }
+}
+
+@media (min-width: 640px) {
+  article {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .kontejner {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1000px) {
+  nav {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .obsah {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1000px) {
+  .reklamy {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1000px) {
+  aside {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .clanek {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .reklama1 {
+    margin-bottom: 0;
+    margin-right: 20px;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .reklama2 {
+    width: 50%;
+  }
+}
